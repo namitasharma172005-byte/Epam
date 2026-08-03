@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>XYZ Bank</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="trigger()">
+        <div class="container">
+            <h2 id="hover">Welcome Customer!!!</h2>
+            <div id="demo">
+                <h3>Follow the below steps to get Diwali Coupon:</h3>
+                <p>1. Enter your Customer ID in the textbox.</p>
+                <p>2. Click on Validate Customer button.</p>
+                <p>3. Click on Register button to hide all the above steps.</p>
+                <p>4. Click on Generate Coupon button.</p>
+            </div>
+
+            <button id="registerBtn" type="button" onclick="hideInstructions()">Click Here to Register</button>
+            <br>
+            <br>
+            <label>Enter Customer ID:</label>
+            <input type="text" id="custID"><br><br>
+            <button onclick="validateCustomer()">Validate Customer</button>
+            <button onclick="generateCoupon()">Generate Coupon</button>
+            <p id="result"></p>
+        </div>
+            <script src="script.js"></script>
+    </body>
+</html>

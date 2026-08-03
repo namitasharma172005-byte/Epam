@@ -1,0 +1,92 @@
+body{font-family:Arial;margin:40px;background:#f4f4f4}#demo{background:#fff;border:1px solid #999;padding:15px;width:450px}button{padding:10px;margin:5px}input{padding:8px}#result{font-weight:bold;color:green}
+
+/* Page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f8fbff);
+}
+
+/* Main Container */
+.container {
+    width: 550px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+/* Instruction Box */
+#demo {
+    background: #eef6ff;
+    border-left: 5px solid #1976d2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #90caf9;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1565c0;
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #1976d2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0d47a1;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Result Box */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #e8f5e9;
+    color: #1b5e20;
+    font-weight: bold;
+}
