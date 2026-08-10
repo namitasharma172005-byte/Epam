@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int N = sc.nextInt();
+        int[] points = new int[N];
+        
+        for (int i = 0; i < N; i++) {
+            points[i] = sc.nextInt();
+        }
+        
+        if (N == 1) {
+            System.out.println(points[0]);
+            return;
+        }
+        
+        int prev2 = 0;
+        int prev1 = points[0];
+        
+        for (int i = 1; i < N; i++) {
+            int take = points[i] + prev2;
+            int skip = prev1;
+            
+            int current = Math.max(take, skip);
+            
+            prev2 = prev1;
+            prev1 = current;
+        }
+        
+        System.out.println(prev1);
+    }
+}
